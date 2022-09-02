@@ -1,0 +1,464 @@
+/* Шрифты */
+
+body {
+    min-width: 360px; /* минимальная ширина экрана 360px */
+    font-family: 'Montserrat';
+}
+/* Header */
+
+.header {
+    background: url('../images/bg-slider.jpg');
+    min-height: 936px;
+    background-size: cover;
+    padding-top: 20px;
+}
+.nav_bar {
+    position: relative;
+    z-index: 9999;
+}
+.nav_bar--left-block {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.header-company {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header-navlist {
+    display: flex;
+    column-gap: 24px;
+}
+.header-telephone {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header-navlist li{
+    list-style: none;
+}
+.header-navlist a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-navlist a:hover {
+   border-bottom: 2px solid #EB2F06;
+
+}
+.header-navbar--social {
+    display: flex;
+    flex-direction: column;
+}
+.header-navbar--links {
+    display: flex;
+    justify-content: end;
+    column-gap: 8px;
+    padding-top: 8px;
+}
+
+
+/* Main-Block */
+.main-block {
+    padding-top: 60px;
+}
+.main-block--row {
+    position: relative;
+}
+.main--text_top {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.main--text_bott {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 24px;
+}
+.photo {
+    position: absolute;
+    top: -117px;
+    right: 0;
+}
+.advantage-list_group {
+    padding-top: 50px;
+}
+.advantage-list--item {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.advantage-list--item img {
+    padding-right: 14px;
+}
+
+.advantage-list--item_text {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main-btn--container {
+    padding-top: 50px;
+}
+.main-btn {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #EB2F06;
+    border: none;
+    width: 367px;
+    height: 84px;
+}
+.main-btn:hover {
+    background: transparent;
+    border: 1px solid #EB2F06;
+    transition: all 0.4s;
+}
+
+/* Block-1 */ 
+.block-1 {
+    margin-top: 100px;
+}
+.block-vert-line {
+    border-left:10px solid #EB2F06;
+    padding-left: 40px;
+}
+
+.block-1--top_text {
+    font-size: 44px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+}
+.block-1--top_bottom {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Block-3 */
+.block-3 {
+    margin-top: 110px;
+}
+.block-3--bg {
+    background-color: #F5F5F7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.block-3--items {
+    display: flex;
+    padding-top: 10px;
+}
+.block-3--right_text {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.block-3--big-text {
+    color: #EB2F06;
+    font-size: 30px;
+    font-weight: 800;
+    padding-right: 16px;
+}
+.block-3--small-text {
+    font-size: 18px;
+    color: black;
+}
+.block-3--btn {
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    background: #EB2F06;
+    border: none;
+    width: 355px;
+    height: 60px;
+}
+.block-3--btn:hover {
+    background: transparent;
+    color: #EB2F06;
+    border: 1px solid #EB2F06;
+    transition: all 0.4s;
+}
+/* Block-4 */
+.block-4 {
+    margin-top: 132px;
+}
+.block-4--top_text {
+    font-size: 44px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Табы */
+.tab {
+    padding-left: 0px;
+   
+}
+.tablinks1 {
+    border-bottom: 1px solid #D9D9DE !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    cursor: pointer;
+    list-style: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+.tablinks1:first-child {
+    padding-top: 0px;
+}
+.tablinks1.active {
+    color: #eb2f06 !important;
+}
+.tab .tablinks1.active .tabcontent1 {
+    animation: showBlock 0.1s linear forwards;
+}
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.tabcontent,
+.tabcontent_sub,
+.tabcontent1,
+.tabcontent_sub10,
+.tabcontent_sub12 {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    -webkit-transition: all 0.5s ease-out 0.1s;
+    -moz-transition: all 0.5s ease-out 0.1s;
+    -o-transition: all 0.5s ease-out 0.1s;
+    transition: all 0.5s ease-out 0.1s;
+}
+
+.tab-year {
+    font-size: 37px;
+    font-weight: bold;
+}
+.tab-nabor {
+    padding-left: 60px;
+    font-size: 16px;
+
+}
+.tab-no-nabor {
+    font-size: 16px;
+    color: #76767A;
+    padding-left: 43px;
+}
+.block-4_row--ul-list {
+    margin-top: 100px;
+}
+    /* Block-5 */
+.block-5 {
+    margin-top: 100px;
+}
+.block-5--container {
+    background: #EB2F06;
+    /* height: 1057px; */
+}
+.block-5--vert_top-line {
+    border-left:10px solid white;
+    padding-left: 50px;
+}
+.block-5--vert_top-text {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+.block-5-row--block {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Квалификация */
+.block-5--qualification img, span {
+   position: relative;
+   z-index: 9999;
+}
+.block-5-row--qualification {
+    margin-top: 135px;
+    margin-left: 15px;
+    position: relative;
+}
+.block-5--qualification img {
+    vertical-align: middle;
+}
+.block-5--qualification--bg-text::before {
+    content: "Квалификация";
+    font-weight: 600;
+    font-size: 100px;
+    opacity: 0.35;
+    display: block;
+    position: absolute;
+    z-index: 11;
+    top: -70px;
+    left: -32px;
+    line-height: 145px;
+    letter-spacing: 0;
+    color: #eb2f06;
+    text-shadow: rgba(255, 255, 255, 0.15) 1px 0, rgba(255, 255, 255, 0.15) 1px 1px, rgba(255, 255, 255, 0.15) 0 1px, rgba(255, 255, 255, 0.15) -1px 1px, rgba(255, 255, 255, 0.15) -1px 0, rgba(255, 255, 255, 0.15) -1px -1px,
+        rgba(255, 255, 255, 0.15) 0 -1px, rgba(255, 255, 255, 0.15) 1px -1px;
+}
+.block-5--qual-bottom_text {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+.block-5--qual-text {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    padding-left: 21px;
+    position: relative;
+}
+/*Время*/
+.block-5--time img {
+    position: relative;
+    z-index: 9999;
+}
+.block-5-row--time {
+    margin-top: 135px;
+    margin-left: 15px;
+    position: relative;
+}
+.block-5--time img {
+    vertical-align: middle;
+}
+.block-5--time--bg-text::before {
+    content: "Время";
+    font-weight: 600;
+    font-size: 100px;
+    opacity: 0.35;
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: -32px;
+    line-height: 145px;
+    letter-spacing: 0;
+    color: #eb2f06;
+    text-shadow: rgba(255, 255, 255, 0.15) 1px 0, rgba(255, 255, 255, 0.15) 1px 1px, rgba(255, 255, 255, 0.15) 0 1px, rgba(255, 255, 255, 0.15) -1px 1px, rgba(255, 255, 255, 0.15) -1px 0, rgba(255, 255, 255, 0.15) -1px -1px,
+        rgba(255, 255, 255, 0.15) 0 -1px, rgba(255, 255, 255, 0.15) 1px -1px;
+}
+.block-5--time-bottom_text {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+.block-5--time-text {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    padding-left: 21px;
+
+}
+/*Возраст*/
+.block-5-row--age {
+    margin-top: 135px;
+    margin-left: 15px;
+    position: relative;
+}
+.block-5--age img {
+    vertical-align: middle;
+    position: relative;
+    z-index: 9999;
+}
+.block-5--age--bg-text::before {
+    content: "Возраст";
+    font-weight: 600;
+    font-size: 100px;
+    opacity: 0.35;
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: -32px;
+    line-height: 145px;
+    letter-spacing: 0;
+    color: #eb2f06;
+    text-shadow: rgba(255, 255, 255, 0.15) 1px 0, rgba(255, 255, 255, 0.15) 1px 1px, rgba(255, 255, 255, 0.15) 0 1px, rgba(255, 255, 255, 0.15) -1px 1px, rgba(255, 255, 255, 0.15) -1px 0, rgba(255, 255, 255, 0.15) -1px -1px,
+        rgba(255, 255, 255, 0.15) 0 -1px, rgba(255, 255, 255, 0.15) 1px -1px;
+}
+.block-5--age-bottom_text {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+.block-5--age-text {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    padding-left: 21px;
+}
+.block-5--btn {
+    background: url('../images/Arrow-right.png') right center no-repeat #232323;
+    padding: 17px 82px 17px 24px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.block-5--btn:hover {
+    background: url('../images/Arrow-right.png') right center no-repeat transparent;
+    border: 1px solid white;
+    transition: all 0.4s;
+}
+
+/* Block-6 */
+.block-6--container {
+    background-color: #232323;
+    min-height: 746px;
+
+}
+.block-6--top {
+    margin-top: 100px;
+    border-left: 10px solid #EB2F06;
+    padding-left: 40px;
+}
+.block-6--top_text {
+    color: white;
+    font-size: 44px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.block-6--center_card {
+    margin-top: 50px;
+    background: #343434;
+    min-height: 400px;
+}
+.block-6--coach-img{
+    padding: 40px;
+}
+.block-6__coach-name {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.block-6-coach-info {
+    padding-top: 30px;
+}
+.block-6__coach-info {
+    padding-top: 14px;
+    color: white;
+    font-size: 18px;
+}
+.block-6-coach-list {
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
